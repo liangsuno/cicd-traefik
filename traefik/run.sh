@@ -17,7 +17,7 @@ docker service create \
 traefik \
 --docker \
 --docker.swarmmode \
---docker.domain=powercurve-build.experian.local \
+--docker.domain=cicd.local \
 --docker.watch \
 --logLevel=INFO \
 --web

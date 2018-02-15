@@ -2,9 +2,9 @@
 
 docker service create \
     --name gitlab \
-    --hostname gitlab.powercurve-build.experian.local \
+    --hostname gitlab.cicd.local \
     --label 'traefik.port=80' \
     --label traefik.backend=gitlab \
-    --label traefik.frontend.rule="Host:gitlab.powercurve-build.experian.local" \
+    --label traefik.frontend.rule="Host:gitlab.cicd.local" \
     --network traefik-net \
     gitlab/gitlab-ce:latest
