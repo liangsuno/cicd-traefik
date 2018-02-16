@@ -7,4 +7,3 @@ docker service create \
 --network traefik-net \
 --env JENKINS_OPTS="--prefix=/jenkins/overwatch/" \
 es/jenkins
-
