@@ -6,4 +6,5 @@ docker service create \
 --label traefik.frontend.rule="Host:cicd.local;PathPrefix:/jenkins/overwatch" \
 --network traefik-net \
 --env JENKINS_OPTS="--prefix=/jenkins/overwatch/" \
+--detach=true \
 es/jenkins
