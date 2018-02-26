@@ -16,5 +16,5 @@ instance.save()
  
 Jenkins.instance.getInjector().getInstance(AdminWhitelistRule.class).setMasterKillSwitch(false)
 
-# Disable CLI over Remoting
+// Disable CLI over Remoting
 jenkins.model.Jenkins.instance.getDescriptor("jenkins.CLI").get().setEnabled(false)
